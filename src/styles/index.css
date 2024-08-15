@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  input[type="checkbox"]:checked ~ label span svg {
+    @apply inline-flex;
+  }
+
+  .sticky .header-logo {
+    @apply py-5 lg:py-2;
+  }
+
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+
+  input#togglePlan:checked ~ .dot {
+    @apply translate-x-full;
+  }
+
+  input#checkboxLabel:checked ~ .box span {
+    @apply opacity-100;
+  }
+
+  /* Button styles */
+  .button-text-base {
+    color: #6f4f28; /* Brownish color */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    font-family: 'Lora', serif;
+  }
+
+  .button-text-base:hover {
+    color: #f5f5dc; /* Beige color */
+  }
+
+  /* Hover animation for button text */
+  .button-text-hover {
+    @apply transition-colors duration-300 ease-in-out;
+    font-family: 'Lora', serif;
+  }
+
+  .button-text-hover:hover {
+    color: #f5f5dc; /* Beige color */
+  }
+  @keyframes bubble1 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bubble2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bubble3 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-bubble1 {
+    animation: bubble1 6s ease-in-out infinite;
+  }
+  
+  .animate-bubble2 {
+    animation: bubble2 8s ease-in-out infinite;
+  }
+  
+  .animate-bubble3 {
+    animation: bubble3 10s ease-in-out infinite;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+}
