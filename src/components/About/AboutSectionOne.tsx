@@ -24,8 +24,10 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="My College Love Journey"
-                paragraph="Once Upon a Time I was a single boy playing league of legends and is very focused on my studies and physical activities such as basketball and gym exercises. After focusing on my self I became famous in the school and caught the attention of many girls, but there is only one girl that caught my heart UGH.  "
+                title="At Chameleon Beauty, "
+                paragraph="we believe that true beauty comes from within - and we're here to help you showcase it. As a professional editorial and wedding makeup artist, I specialize in creating stunning looks that not only enhance your natural features but also boost your confidence.
+Our mission is simple: to empower women through the art of makeup. Whether you're walking down the aisle, stepping into the spotlight for a photoshoot, or just want to feel fabulous for a special event, we're here to bring out your inner strength and beauty.
+Discover the transformative power of professional makeup artistry and let your true self shine."
                 mb="44px"
               />
 

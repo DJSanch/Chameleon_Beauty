@@ -70,7 +70,7 @@ const Header = () => {
                       {menuItem.path ? (
                         <Link
                           href={menuItem.path}
-                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 font-lora button-text-base ${
+                          className={`flex py-2 text-base lg:mr-20 lg:inline-flex lg:px-0 lg:py-6 font-lora button-text-base ${
                             usePathName === menuItem.path ? "text-beige" : "text-beige"
                           }`}
                         >
