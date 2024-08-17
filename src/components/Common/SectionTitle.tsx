@@ -12,19 +12,17 @@ const SectionTitle = ({
   mb?: string;
 }) => {
   return (
-    <>
-      <div
-        className={`w-full ${center ? "mx-auto text-center" : ""}`}
-        style={{ maxWidth: width, marginBottom: mb }}
-      >
-        <h2 className="mb-4 text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-          {title}
-        </h2>
-        <p className="text-base !leading-relaxed text-body-color md:text-lg">
-          {paragraph}
-        </p>
-      </div>
-    </>
+    <div
+      className={`w-full ${center ? "mx-auto text-center" : ""}`}
+      style={{ maxWidth: width, marginBottom: mb }}
+    >
+      <h2 className="mb-4 text-3xl font-serif font-bold text-[#8b4513] !leading-tight dark:text-white sm:text-4xl md:text-[45px]">
+        {title}
+      </h2>
+      <p className="text-base font-serif text-body-color !leading-relaxed md:text-lg">
+        {paragraph}
+      </p>
+    </div>
   );
 };
 

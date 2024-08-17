@@ -10,6 +10,7 @@
   }
 }
 
+
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
@@ -45,6 +46,10 @@
   /* Hover animation for button text */
   .button-text-hover {
     @apply transition-colors duration-300 ease-in-out;
+    font-family: 'Lora', serif;
+  }
+
+  .fontLora {
     font-family: 'Lora', serif;
   }
 
@@ -102,5 +107,7 @@
   .shadow-lg {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   }
+
+  
   
 }
