@@ -3,9 +3,11 @@ import Link from "next/link";
 const Breadcrumb = ({
   pageName,
   description,
+  imageSrc,
 }: {
   pageName: string;
   description: string;
+  imageSrc?: string; // Optional image source
 }) => {
   return (
     <>
@@ -20,6 +22,11 @@ const Breadcrumb = ({
                 <p className="text-base font-medium leading-relaxed text-body-color">
                   {description}
                 </p>
+                {imageSrc && (
+                  <div className="mt-6">
+                    <img src={imageSrc} alt="Breadcrumb Image" className="w-full max-w-[300px] rounded-md" />
+                  </div>
+                )}
               </div>
             </div>
             <div className="w-full px-4 md:w-4/12 lg:w-5/12">

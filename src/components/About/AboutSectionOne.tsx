@@ -40,7 +40,7 @@ const AboutSectionOne: React.FC = () => {
   };
 
   const List = ({ text }: { text: string }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color font-playfair">
+    <p className="mb-5 flex items-center text-lg font-serif text-body-color font-lora">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>
@@ -86,7 +86,7 @@ const AboutSectionOne: React.FC = () => {
                   <button
                     key={category}
                     onClick={() => setSelectedCategory(category)}
-                    className={`py-1 px-5 text-sm rounded font-playfair text-[#8b4513] bg-[#f5f5dc] transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105`}
+                    className={`py-1 px-5 text-sm rounded font-playfair fontLora text-[#8b4513] bg-[#f5f5dc] transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105`}
                   >
                     {category}
                   </button>
@@ -137,6 +137,7 @@ const AboutSectionOne: React.FC = () => {
                     e.stopPropagation();
                     handlePrevImage();
                   }}
+                  aria-label="Previous Image"
                 >
                   &lt;
                 </button>
@@ -146,6 +147,7 @@ const AboutSectionOne: React.FC = () => {
                     e.stopPropagation();
                     handleNextImage();
                   }}
+                  aria-label="Next Image"
                 >
                   &gt;
                 </button>

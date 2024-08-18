@@ -16,6 +16,7 @@ const AboutPage = () => {
       <Breadcrumb
         pageName="About me"
         description="My Name is Kyle William T. Tan, Owner of Canadian Auto Parts. Once upon a time, I dream to become stephen curry and become one of the best league players in the world to defeat faker. I go to gym everyday and play basketball every saturday. Currently I am a 3rd year irregular student BS Mechanical Engineering.  "
+        imageSrc="/path/to/your/image.jpg" // Replace with your image path
       />
       <AboutSectionOne />
       <AboutSectionTwo />
