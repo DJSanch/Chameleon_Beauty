@@ -10,10 +10,78 @@
     font-family: "Inter", sans-serif;
   }
 }
+/* Define keyframe animations */
+@keyframes moveFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Container styling */
+.image-container {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px; /* Set maximum width */
+  height: auto; /* Height auto to maintain aspect ratio */ /* Prevent image overflow */
+  margin: auto;
+}
+
+/* Image styling */
+.image-container img {
+  position: absolute; /* Position absolutely within the container */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center image */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust how the image covers the container */
+}
+
+
+/* Optional: Add responsiveness for very small screens */
+@media (max-width: 640px) {
+  .image-container {
+    max-width: 300px; /* Adjust as needed */
+  }
+}
+
+@keyframes moveFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to elements */
+.image-animation {
+  animation: moveFromLeft 1s ease-out forwards;
+}
+
+.text-animation {
+  animation: moveFromRight 1s ease-out forwards;
+}
+
+
 
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
+  }
+
+  .font-lora {
+    font-family: 'Lora', serif;
+  }
+
+  .text-custom-brown {
+    color: #6f4f28;
   }
 
   .sticky .header-logo {
