@@ -56,7 +56,7 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto flex flex-col items-center lg:flex-row lg:items-start lg:justify-center">
                 {/* New Left Side Image */}
-                <div className="flex-none lg:w-1/3 lg:pr-8 group">
+                <div className="flex-none lg:w-1/3 lg:pr-8 group mb-8 lg:mb-0"> {/* Added bottom margin for space */}
                   <img
                     src="/images/hero/hello.jpeg" // Replace with your image path
                     alt="Left Side Image"
@@ -65,45 +65,31 @@ const Hero = () => {
                   />
                 </div>
 
-                {/* Line and Text */}
-                <div className="flex flex-col items-center lg:items-start lg:w-2/3">
-                  <div className="flex items-center">
-                    <div
-                      className="flex items-center"
-                      style={{ marginRight: '40px' }} // Pushes the line to the right
+                {/* Text Section */}
+                <div className="flex flex-col items-center lg:items-start lg:w-2/3 lg:pl-8"> {/* Added left padding for space */}
+                  <div className="text-left">
+                    <h1
+                      className="mb-5 font-bold leading-tight transition-transform duration-300 ease-in-out hover:translate-x-2 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                      style={{ 
+                        fontFamily: 'Playfair Display, serif',
+                        color: '#f5f5dc',
+                      }}
                     >
-                      <div
-                        className="h-full border-l-4"
-                        style={{
-                          height: '17rem',
-                          borderColor: '#f5f5dc',
-                        }}
-                      ></div>
-                    </div>
-                    <div className="text-left">
-                      <h1
-                        className="mb-5 font-bold leading-tight transition-transform duration-300 ease-in-out hover:translate-x-2 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
-                        style={{ 
-                          fontFamily: 'Playfair Display, serif',
-                          color: '#f5f5dc',
-                        }}
-                      >
-                        CHAMELEON BEAUTY
-                      </h1>
-                      <p
-                        className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-[#6f4f28] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
-                        style={{ 
-                          fontFamily: 'Lora, serif',
-                          color: '#8b4513',
-                        }}
-                      >
-                        Unleash Your Inner Glamour
-                      </p>
-                      <div style={{ pointerEvents: 'auto' }}>
-                        <Link href="#about" className="inline-block px-6 py-3 border border-[#f5f5dc] text-[#f5f5dc] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#f5f5dc] hover:text-[#6f4f28]">
-                          Learn More
-                        </Link>
-                      </div>
+                      CHAMELEON BEAUTY
+                    </h1>
+                    <p
+                      className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-[#6f4f28] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+                      style={{ 
+                        fontFamily: 'Lora, serif',
+                        color: '#8b4513',
+                      }}
+                    >
+                      Unleash Your Inner Glamour
+                    </p>
+                    <div style={{ pointerEvents: 'auto' }}>
+                      <Link href="#about" className="inline-block px-6 py-3 border border-[#f5f5dc] text-[#f5f5dc] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#f5f5dc] hover:text-[#6f4f28]">
+                        Learn More
+                      </Link>
                     </div>
                   </div>
                 </div>
