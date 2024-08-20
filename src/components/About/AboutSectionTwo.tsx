@@ -32,12 +32,12 @@ const AboutSectionTwo = () => {
               </div>
               <div className="mb-4">
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-lora">
-                  As a professional makeup artist specializing in editorial and bridal makeup, I've had the privilege of working with diverse clientele, from blushing brides to beautiful models posing for photoshoot campaigns. Each face I work on is a new canvas, a fresh opportunity to bring out someone's inner radiance.
+                  As a professional makeup artist specializing in editorial and bridal makeup, I&apos;ve had the privilege of working with diverse clientele, from blushing brides to beautiful models posing for photoshoot campaigns. Each face I work on is a new canvas, a fresh opportunity to bring out someone&apos;s inner radiance.
                 </p>
               </div>
               <div className="mb-4">
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-lora">
-                  My approach to makeup is more than just applying products - it's about creating an experience that empowers. I believe that "when a woman feels beautiful, she exudes confidence that shines from within." My greatest achievement is the smile on a client's face when she looks in the mirror and sees her most glamorous self looking back. I'm excited to work with you and help you discover the glamor within you!
+                  My approach to makeup is more than just applying products - it&apos;s about creating an experience that empowers. I believe that &quot;when a woman feels beautiful, she exudes confidence that shines from within.&quot; My greatest achievement is the smile on a client&apos;s face when she looks in the mirror and sees her most glamorous self looking back. I&apos;m excited to work with you and help you discover the glamor within you!
                 </p>
               </div>
             </div>
