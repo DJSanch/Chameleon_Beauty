@@ -40,7 +40,7 @@ const AboutSectionOne: React.FC = () => {
   };
 
   const List = ({ text }: { text: string }) => (
-    <p className="mb-5 flex items-center text-lg font-serif text-body-color font-lora">
+    <p className="mb-5 flex items-center text-lg font-serif font-light text-body-color font-lora">
       <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
         {checkIcon}
       </span>

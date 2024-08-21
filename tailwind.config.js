@@ -28,7 +28,7 @@ module.exports = {
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#121723",
-        primary: "#4A6CF7",
+        primary: "#f5f5dc",
         yellow: "#FBB040",
         "bg-color-dark": "#FFFFFF", // Ensure background color is white
         "body-color": "#788293", // Keep body color as defined, but ensure it's appropriate for light mode

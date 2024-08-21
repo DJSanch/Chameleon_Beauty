@@ -23,7 +23,7 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2 flex items-center">
             <div className="max-w-[600px] lg:pl-4 text-animation">
               <div className="mb-4">
-                <h3 className="mb-2 text-xl font-bold text-[#6f4f28] dark:text-white sm:text-2xl lg:text-xl xl:text-2xl font-lora">
+                <h3 className="mb-2 text-xl font-thin text-[#6f4f28] dark:text-white sm:text-2xl lg:text-xl xl:text-2xl font-lora">
                   My Journey,
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed font-lora">

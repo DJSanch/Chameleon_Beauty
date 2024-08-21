@@ -24,7 +24,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleStickyNavbar);
     };
-  }, []);
+  }, []);          
 
   const handleSubmenu = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));

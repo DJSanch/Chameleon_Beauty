@@ -80,6 +80,12 @@
     font-family: 'Lora', serif;
   }
 
+  .font-fira-sans-extra-light {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200; /* Extra Light weight */
+  }
+  
+
   .text-custom-brown {
     color: #6f4f28;
   }
@@ -170,15 +176,15 @@
   }
   
   .animate-bubble1 {
-    animation: bubble1 6s ease-in-out infinite;
+    animation: bubble1 3s ease-in-out infinite;
   }
   
   .animate-bubble2 {
-    animation: bubble2 8s ease-in-out infinite;
+    animation: bubble2 4s ease-in-out infinite;
   }
   
   .animate-bubble3 {
-    animation: bubble3 10s ease-in-out infinite;
+    animation: bubble3 4s ease-in-out infinite;
   }
   
   .shadow-lg {

@@ -16,7 +16,7 @@ const Breadcrumb = ({
               <div className="mb-8 max-w-[570px] md:mb-0 lg:mb-12">
                 <div className="relative flex items-center">
                   <div className="relative flex flex-col space-y-4">
-                    <h1 className="text-2xl font-bold text-[#6f4f28] dark:text-[#eaeaea] sm:text-3xl font-lora">
+                    <h1 className="text-2xl font-light text-[#6f4f28] dark:text-[#eaeaea] sm:text-3xl font-lora">
                       {pageName}
                     </h1>
                     <p className="text-base font-medium leading-relaxed text-[#4a4a4a] dark:text-[#b3b3b3] font-lora">
