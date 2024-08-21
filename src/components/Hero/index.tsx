@@ -51,48 +51,32 @@ const Hero = () => {
           <div className="absolute bottom-1/4 right-1/3 w-22 h-22 bubble animate-bubble3" />
         </div>
 
-        <div className="container relative z-10">
-          <div className="-mx-4 flex flex-wrap justify-center">
-            <div className="w-full px-4">
-              <div className="mx-auto flex flex-col items-center lg:flex-row lg:items-start lg:justify-center">
-                {/* New Left Side Image */}
-                <div className="flex-none lg:w-1/3 lg:pr-8 group mb-8 lg:mb-0"> {/* Added bottom margin for space */}
-                  <img
-                    src="/images/hero/hello.jpeg" // Replace with your image path
-                    alt="Left Side Image"
-                    className="h-[17rem] w-[auto] rounded-lg border-4 border-[#6f4f28] shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-110"
-                    style={{ width: '750px', boxShadow: '10px 10px 20px rgba(0, 0, 0, 0.3)' }} // Adjust width and shadow as needed
-                  />
-                </div>
-
-                {/* Text Section */}
-                <div className="flex flex-col items-center lg:items-start lg:w-2/3 lg:pl-8"> {/* Added left padding for space */}
-                  <div className="text-left">
-                    <h1
-                      className="mb-5 font-bold leading-tight transition-transform duration-300 ease-in-out hover:translate-x-2 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
-                      style={{ 
-                        fontFamily: 'Playfair Display, serif',
-                        color: '#f5f5dc',
-                      }}
-                    >
-                      CHAMELEON BEAUTY
-                    </h1>
-                    <p
-                      className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:translate-x-2 hover:text-[#6f4f28] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
-                      style={{ 
-                        fontFamily: 'Lora, serif',
-                        color: '#8b4513',
-                      }}
-                    >
-                      Unleash Your Inner Glamour
-                    </p>
-                    <div style={{ pointerEvents: 'auto' }}>
-                      <Link href="#about" className="inline-block px-6 py-3 border border-[#f5f5dc] text-[#f5f5dc] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#f5f5dc] hover:text-[#6f4f28]">
-                        Learn More
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+        <div className="flex items-center justify-center h-full relative z-10">
+          <div className="text-center">
+            {/* Text Section */}
+            <div className="flex flex-col items-center">
+              <h1
+                className="mb-5 font-bold leading-tight transition-transform duration-300 ease-in-out hover:-translate-y-2 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                style={{ 
+                  fontFamily: 'Playfair Display, serif',
+                  color: '#f5f5dc',
+                }}
+              >
+                CHAMELEON BEAUTY
+              </h1>
+              <p
+                className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:text-[#6f4f28] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+                style={{ 
+                  fontFamily: 'Lora, serif',
+                  color: '#8b4513',
+                }}
+              >
+                Unleash Your Inner Glamour
+              </p>
+              <div>
+                <Link href="#about" className="inline-block px-6 py-3 border border-[#f5f5dc] text-[#f5f5dc] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#f5f5dc] hover:text-[#6f4f28]">
+                  Learn More
+                </Link>
               </div>
             </div>
           </div>
