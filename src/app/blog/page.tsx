@@ -2,6 +2,7 @@ import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Brands from "@/components/Brands";
 import Image from "next/image"; // Make sure to import Next.js Image component for optimized images
 
 import { Metadata } from "next";
@@ -28,7 +29,7 @@ const Blog = () => {
         pageName="Makeup Services"
         description="Explore our gallery of elegant and refined makeup looks designed to enhance your natural beauty and personal style."
       />
-      <div className="max-w-7xl mx-auto my-12 p-6 space-y-12">
+      <div className="max-w-7xl mx-auto my-12 p-6 space-y-12 animate-move-up">
         {blogItems.map((item) => (
           <div
             key={item.id}

@@ -18,7 +18,6 @@ const AboutPage = () => {
         description="Hi, I'm Jessie, the founder and lead artist at Chameleon Beauty."
       />
       <AboutSectionTwo />
-      <AboutSectionOne />
     </>
   );
 };
