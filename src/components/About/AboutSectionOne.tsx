@@ -93,7 +93,7 @@ const AboutSectionOne: React.FC = () => {
               {/* Toggle Button */}
               <button
                 onClick={() => setButtonsVisible(!buttonsVisible)}
-                className="mb-6 py-1 px-3 text-xs sm:text-sm md:text-base rounded font-lora text-[#8b4513] bg-[#f5c2e0] transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105"
+                className="mb-6 py-1 px-3 text-xs sm:text-sm md:text-base rounded font-lora text-[#8b4513] bg-none transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105"
               >
                 {buttonsVisible ? "▲" : "▼"}
               </button>
@@ -105,7 +105,7 @@ const AboutSectionOne: React.FC = () => {
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`py-1 px-3 text-xs sm:text-sm md:text-base rounded font-playfair text-[#8b4513] bg-[#f5c2e0] transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105`}
+                      className={`py-1 px-3 text-xs sm:text-sm md:text-base rounded font-playfair text-[#8b4513] bg-none transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105`}
                     >
                       {category}
                     </button>
