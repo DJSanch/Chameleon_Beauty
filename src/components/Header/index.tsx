@@ -30,6 +30,10 @@ const Header = () => {
     setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
+  const handleMenuItemClick = () => {
+    setNavbarOpen(false);
+  };
+
   const usePathName = usePathname();
 
   return (
@@ -70,6 +74,7 @@ const Header = () => {
                       {menuItem.path ? (
                         <Link
                           href={menuItem.path}
+                          onClick={handleMenuItemClick}
                           className={`flex py-1 text-sm lg:mr-12 lg:inline-flex lg:px-10 lg:py-2 font-lora button-text-base ${
                             usePathName === menuItem.path ? "text-beige" : "text-beige"
                           }`}
@@ -102,6 +107,7 @@ const Header = () => {
                             {menuItem.submenu.map((submenuItem, index) => (
                               <Link
                                 href={submenuItem.path}
+                                onClick={handleMenuItemClick}
                                 key={index}
                                 className="block rounded py-2 text-xs text-dark hover:text-primary lg:px-2 font-chameleon button-text-base"
                               >
@@ -124,7 +130,7 @@ const Header = () => {
                 onClick={navbarToggleHandler}
                 id="navbarToggler"
                 aria-label="Mobile Menu"
-                className="absolute right-40 top-1/2 transform -translate-y-1/2 px-2 py-1"
+                className="absolute right-20 top-1/2 transform -translate-y-1/2 px-2 py-1"
               >
                 <span
                   className={`block h-0.5 w-5 bg-black transition-all duration-300 ${
@@ -158,6 +164,7 @@ const Header = () => {
                       {menuItem.path ? (
                         <Link
                           href={menuItem.path}
+                          onClick={handleMenuItemClick}
                           className={`flex py-1 text-sm font-lora button-text-base ${
                             usePathName === menuItem.path ? "text-beige" : "text-beige"
                           }`}
@@ -190,6 +197,7 @@ const Header = () => {
                             {menuItem.submenu.map((submenuItem, index) => (
                               <Link
                                 href={submenuItem.path}
+                                onClick={handleMenuItemClick}
                                 key={index}
                                 className="block rounded py-2 text-xs text-dark hover:text-primary lg:px-2 font-chameleon button-text-base"
                               >
