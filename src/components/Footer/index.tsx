@@ -160,14 +160,6 @@ const Footer = () => {
                     Contact
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/projects"
-                    className="mb-4 inline-block text-base text-[#f6b1b1] duration-300 hover:text-primary dark:text-[#f6b1b1] dark:hover:text-primary font-lora"
-                  >
-                    Projects
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
