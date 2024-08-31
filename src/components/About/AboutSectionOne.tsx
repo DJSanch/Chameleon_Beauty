@@ -15,8 +15,8 @@ const checkIcon = (
 );
 
 const images = [
-  { src: "/images/about/about-image.svg", category: "Editorial Makeup" },
-  { src: "/images/about/about-image-dark.svg", category: "Editorial Makeup" },
+  { src: "/images/about/hello2.jpeg", category: "Editorial Makeup" },
+  { src: "/images/about/hello3.jpeg", category: "Editorial Makeup" },
   { src: "/images/about/hello.jpeg", category: "Bridal Services" },
   { src: "/images/about/hello.jpeg", category: "Special Event Makeup" },
   { src: "/images/about/hello.jpeg", category: "Add ons" },

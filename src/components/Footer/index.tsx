@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="container relative">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+          <div className="w-full px-2 md:w-1/2 lg:w-4/12 xl:w-5/12">
             <div className="mb-12 max-w-[120px] lg:mb-16">
               <Link href="/" className="mb-8 inline-block">
                 <Image
@@ -53,7 +53,7 @@ const Footer = () => {
               </Link>
               <div className="flex items-center">
                 <a
-                  href="/"
+                  href="https://www.facebook.com/profile.php?id=100090319733907"
                   aria-label="social-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  href="/"
+                  href="https://www.instagram.com/themakeupchameleon?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   aria-label="social-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,20 +82,18 @@ const Footer = () => {
                   <svg
                     width="18"
                     height="18"
-                    viewBox="0 0 22 22"
+                    viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M13.9831 19.25L9.82094 13.3176L4.61058 19.25H2.40625L8.843 11.9233L2.40625 2.75H8.06572L11.9884 8.34127L16.9034 2.75H19.1077L12.9697 9.73737L19.6425 19.25H13.9831ZM16.4378 17.5775H14.9538L5.56249 4.42252H7.04674L10.808 9.6899L11.4584 10.6039L16.4378 17.5775Z"
+                      d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"
                       fill="currentColor"
                     />
                   </svg>
                 </a>
                 <a
-                  href="/"
+                  href="https://pin.it/2v4FFYWON"
                   aria-label="social-link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -103,27 +101,15 @@ const Footer = () => {
                 >
                   <svg
                     width="18"
-                    height="14"
-                    viewBox="0 0 18 14"
-                    className="fill-current"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z" />
-                  </svg>
-                </a>
-                <a
-                  href="/"
-                  aria-label="social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#6f4f28] duration-300 hover:text-primary dark:text-[#f6b1b1] dark:hover:text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="16"
-                    viewBox="0 0 17 16"
-                    className="fill-current"
-                  >
-                    <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.2196C15.8443 15.4222 16.3441 14.8999 16.3441 14.3029V1.11936C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z" />
+                    <path
+                      d="M12 0a12 12 0 0 0-4.82 23c-.03-.85 0-1.85.21-2.76l1.55-6.54s-.39-.77-.39-1.9c0-1.78 1.03-3.1 2.32-3.1 1.09 0 1.62.81 1.62 1.8 0 1.09-.7 2.73-1.06 4.25-.3 1.27.63 2.31 1.89 2.31 2.27 0 3.8-2.92 3.8-6.38 0-2.63-1.77-4.6-4.99-4.6a5.68 5.68 0 0 0-5.9 5.75c0 1.05.3 1.78.78 2.35.23.27.26.37.18.67l-.25.97c-.08.3-.32.4-.6.3-1.67-.69-2.46-2.52-2.46-4.59 0-3.4 2.88-7.5 8.58-7.5 4.58 0 7.6 3.32 7.6 6.88 0 4.7-2.62 8.22-6.48 8.22-1.3 0-2.51-.7-2.93-1.5l-.84 3.3c-.26.93-.76 1.86-1.21 2.58A11.99 11.99 0 0 0 24 12 12 12 0 0 0 12 0z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </a>
               </div>
@@ -201,13 +187,8 @@ const Footer = () => {
                     href="mailto:hello@yourdomain.com"
                     className="inline-block text-base text-[#6f4f28] duration-300 hover:text-primary dark:text-[#f6b1b1] dark:hover:text-primary font-lora"
                   >
-                    hello@yourdomain.com
+                    eyeseniamua@gmail.com
                   </a>
-                </li>
-                <li>
-                  <p className="text-base text-[#6f4f28] dark:text-[#6f4f28] font-lora">
-                    123 Street Name, City, State, 12345
-                  </p>
                 </li>
               </ul>
             </div>
