@@ -14,6 +14,13 @@ const checkIcon = (
   </svg>
 );
 
+// New SVG for the toggle button
+const arrowIcon = (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b4513" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 9l6 6 6-6"/>
+  </svg>
+);
+
 const images = [
   { src: "/images/about/hello2.jpeg", category: "Editorial Makeup" },
   { src: "/images/about/hello3.jpeg", category: "Editorial Makeup" },
@@ -95,7 +102,11 @@ const AboutSectionOne: React.FC = () => {
                 onClick={() => setButtonsVisible(!buttonsVisible)}
                 className="mb-6 py-1 px-3 text-xs sm:text-sm md:text-base rounded font-lora text-[#8b4513] bg-none transition-transform duration-300 ease-in-out hover:shadow-lg hover:scale-105"
               >
-                {buttonsVisible ? "▲" : "▼"}
+                {buttonsVisible ? (
+                  <span className="flex items-center justify-center rotate-180">{arrowIcon}</span>
+                ) : (
+                  <span className="flex items-center justify-center">{arrowIcon}</span>
+                )}
               </button>
 
               {/* Category Filter Buttons */}
@@ -158,7 +169,6 @@ const AboutSectionOne: React.FC = () => {
                 height={800}
                 style={{ objectFit: "contain" }}
                 className="max-h-[80vh] max-w-[80vw]"
-                onClick={() => setIsZoomed(false)} // Unzoom on image click
               />
               <button
                 onClick={handleNextImage}

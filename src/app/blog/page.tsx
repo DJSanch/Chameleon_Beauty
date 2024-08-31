@@ -273,7 +273,7 @@ const Blog = () => {
             </div>
             <button
               onClick={() => handleToggleDetails(item.id)}
-              className="absolute top-0 right-0 mt-4 mr-4 p-2 text-gray-700 bg-beige-200 rounded-full hover:bg-pink-300 transition-colors duration-300 ease-in-out"
+              className="absolute top-0 right-0 mt-4 mr-4 p-2 text-gray-700 bg-pink-200 rounded-full hover:bg-pink-300 transition-colors duration-300 ease-in-out"
             >
               {isOpen(item.id) ? (
                 <svg
@@ -306,6 +306,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
+      <AboutSectionOne />
     </>
   );
 };
