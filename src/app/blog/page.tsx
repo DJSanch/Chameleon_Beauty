@@ -246,7 +246,7 @@ const Blog = () => {
               } overflow-hidden shadow-lg ${item.bgColor} p-6`}
             >
               {item.dropdownDetails.map((dropdownItem, index) => (
-                <div key={index} className="mb-8">
+                <div key={index} className="mb-8 px-10">
                   <h3 className={`text-xl font-bold ${item.textColor}`}>{dropdownItem.title}</h3>
                   <ul className={`list-disc pl-5 mt-2 ${item.textColor}`}>
                     {dropdownItem.items.map((detail, i) => (
@@ -273,7 +273,7 @@ const Blog = () => {
             </div>
             <button
               onClick={() => handleToggleDetails(item.id)}
-              className="absolute top-0 right-0 mt-4 mr-4 p-2 text-gray-700 bg-pink-200 rounded-full hover:bg-pink-300 transition-colors duration-300 ease-in-out"
+              className="absolute top-0 right-0 mt-4 mr-4 p-2 text-gray-700 bg-gradient-to-r from-red-300 to-beige-300 rounded-full hover:from-pink-400 hover:to-beige-400  transition-colors duration-300 ease-in-out"
             >
               {isOpen(item.id) ? (
                 <svg
@@ -286,7 +286,7 @@ const Blog = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M6 9l6 6 6-6"/>
+                  <path d="M18 15l-6-6-6 6"/>
                 </svg>
               ) : (
                 <svg
@@ -299,7 +299,7 @@ const Blog = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M18 15l-6-6-6 6"/>
+                  <path d="M6 9l6 6 6-6"/>
                 </svg>
               )}
             </button>

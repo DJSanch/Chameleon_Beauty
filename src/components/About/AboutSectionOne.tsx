@@ -37,23 +37,22 @@ const AboutSectionOne: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [buttonsVisible, setButtonsVisible] = useState<boolean>(true);
 
+  // Filter images based on the selected category
+  const filteredImages = images.filter(
+    (image) => selectedCategory === "All" || image.category === selectedCategory
+  );
+
   const handleImageClick = (index: number) => {
-    if (isZoomed && currentImage === index) {
-      // Clicked image is already zoomed, so unzoom it
-      setIsZoomed(false);
-    } else {
-      // Zoom in on the clicked image
-      setCurrentImage(index);
-      setIsZoomed(true);
-    }
+    setCurrentImage(index);
+    setIsZoomed(true);
   };
 
   const handleNextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
+    setCurrentImage((prev) => (prev + 1) % filteredImages.length);
   };
 
   const handlePrevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentImage((prev) => (prev - 1 + filteredImages.length) % filteredImages.length);
   };
 
   const List = ({ text }: { text: string }) => (
@@ -125,24 +124,22 @@ const AboutSectionOne: React.FC = () => {
               )}
 
               <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3">
-                {images
-                  .filter((image) => selectedCategory === "All" || image.category === selectedCategory)
-                  .map((image, index) => (
-                    <div
-                      key={index}
-                      className="relative cursor-pointer overflow-hidden"
-                      style={{ paddingBottom: "100%" }} // Maintain square aspect ratio
-                      onClick={() => handleImageClick(index)}
-                    >
-                      <Image
-                        src={image.src}
-                        alt={`about-image-${index}`}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="transition-transform duration-300 ease-in-out transform hover:scale-110" // Slightly larger hover scale
-                      />
-                    </div>
-                  ))}
+                {filteredImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className="relative cursor-pointer overflow-hidden"
+                    style={{ paddingBottom: "100%" }} // Maintain square aspect ratio
+                    onClick={() => handleImageClick(index)}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={`about-image-${index}`}
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-300 ease-in-out transform hover:scale-110" // Slightly larger hover scale
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -150,32 +147,34 @@ const AboutSectionOne: React.FC = () => {
           {/* Fullscreen Overlay */}
           {isZoomed && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-              <button
-                onClick={() => setIsZoomed(false)}
-                className="absolute top-4 right-4 text-white text-3xl"
-              >
-                &times;
-              </button>
-              <button
-                onClick={handlePrevImage}
-                className="absolute left-4 text-white text-3xl"
-              >
-                &#8249;
-              </button>
-              <Image
-                src={images[currentImage].src}
-                alt={`zoomed-about-image-${currentImage}`}
-                width={800}
-                height={800}
-                style={{ objectFit: "contain" }}
-                className="max-h-[80vh] max-w-[80vw]"
-              />
-              <button
-                onClick={handleNextImage}
-                className="absolute right-4 text-white text-3xl"
-              >
-                &#8250;
-              </button>
+              <div className="relative">
+                <button
+                  onClick={() => setIsZoomed(false)}
+                  className="absolute top-2 right-2 text-white text-3xl z-10"
+                >
+                  &times;
+                </button>
+                <Image
+                  src={filteredImages[currentImage].src}
+                  alt={`zoomed-about-image-${currentImage}`}
+                  width={800}
+                  height={800}
+                  style={{ objectFit: "contain" }}
+                  className="max-h-[80vh] max-w-[80vw] relative"
+                />
+                <button
+                  onClick={handlePrevImage}
+                  className="absolute top-1/2 left-2 transform -translate-y-1/2 text-white text-2xl"
+                >
+                  &lsaquo;
+                </button>
+                <button
+                  onClick={handleNextImage}
+                  className="absolute top-1/2 right-2 transform -translate-y-1/2 text-white text-2xl"
+                >
+                  &rsaquo;
+                </button>
+              </div>
             </div>
           )}
         </div>
