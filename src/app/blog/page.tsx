@@ -190,7 +190,7 @@ const Blog = () => {
             }`}
           >
             <div className="relative flex flex-col lg:flex-row items-center lg:items-start h-full">
-              <div className="relative flex-shrink-0 lg:w-1/3">
+              <div className="relative flex-shrink-0 w-full lg:w-1/3">
                 <div className="relative group">
                   <Image
                     src={item.src}
@@ -204,7 +204,7 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col lg:w-2/3 p-6 lg:ml-4 flex-grow">
+              <div className="flex flex-col w-full lg:w-2/3 p-6 lg:ml-4 flex-grow">
                 <div className="flex flex-col justify-between h-full">
                   <div>
                     <p className={`text-gray-800 text-lg font-serif leading-tight mb-4 ${item.textColor}`}>
@@ -223,7 +223,7 @@ const Blog = () => {
                             strokeLinecap="round"
                             strokeLinejoin="round"
                           >
-                            <path d="M9 18l6-6-6-6"/>
+                            <path d="M9 18l6-6-6-6" />
                           </svg>
                           {detail}
                         </li>
@@ -243,10 +243,10 @@ const Blog = () => {
             <div
               className={`transition-all duration-300 ease-in-out ${
                 isOpen(item.id) ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-              } overflow-hidden shadow-lg ${item.bgColor} p-6`}
+              } overflow-auto shadow-lg ${item.bgColor} p-6`}
             >
               {item.dropdownDetails.map((dropdownItem, index) => (
-                <div key={index} className="mb-8 px-10">
+                <div key={index} className="mb-8 px-4 lg:px-10">
                   <h3 className={`text-xl font-bold ${item.textColor}`}>{dropdownItem.title}</h3>
                   <ul className={`list-disc pl-5 mt-2 ${item.textColor}`}>
                     {dropdownItem.items.map((detail, i) => (
@@ -261,19 +261,18 @@ const Blog = () => {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         >
-                          <path d="M9 18l6-6-6-6"/>
+                          <path d="M9 18l6-6-6-6" />
                         </svg>
                         {detail}
                       </li>
                     ))}
                   </ul>
-                  
                 </div>
               ))}
             </div>
             <button
               onClick={() => handleToggleDetails(item.id)}
-              className="absolute top-0 right-0 mt-4 mr-4 p-2 text-gray-700 bg-gradient-to-r from-red-300 to-beige-300 rounded-full hover:from-pink-400 hover:to-beige-400  transition-colors duration-300 ease-in-out"
+              className="absolute top-4 right-4 p-2 text-gray-700 bg-gradient-to-r from-red-300 to-beige-300 rounded-full hover:from-pink-400 hover:to-beige-400 transition-colors duration-300 ease-in-out"
             >
               {isOpen(item.id) ? (
                 <svg
@@ -286,7 +285,7 @@ const Blog = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M18 15l-6-6-6 6"/>
+                  <path d="M18 15l-6-6-6 6" />
                 </svg>
               ) : (
                 <svg
@@ -299,7 +298,7 @@ const Blog = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M6 9l6 6 6-6"/>
+                  <path d="M6 9l6 6 6-6" />
                 </svg>
               )}
             </button>
