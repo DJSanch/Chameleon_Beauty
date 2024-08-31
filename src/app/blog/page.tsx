@@ -136,8 +136,8 @@ const blogItems = [
     alt: "Add-ons",
     text: "Indulge in glamour with our curated makeup services for an unforgettable look.",
     sectionTitle: "Add-ons",
-    bgColor: "bg-yellow-100",
-    textColor: "text-yellow-800",
+    bgColor: "bg-pink-100",
+    textColor: "text-pink-800",
     details: ["Makeup Lesson", "Travel Fee"],
     dropdownDetails: [
       {
