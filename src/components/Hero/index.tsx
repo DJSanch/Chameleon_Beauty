@@ -20,10 +20,10 @@ const Hero = () => {
       >
         {/* Overlay for background blending */}
         <div
-          className="absolute inset-0 bg-gray-800 opacity-50"
+          className="absolute inset-0 bg-purple-900 opacity-60"
           style={{
             backgroundBlendMode: 'overlay',
-            backgroundColor: 'rgba(128, 128, 128, 0.5)',
+            backgroundColor: 'rgba(128, 0, 128, 0.6)', // Purple overlay
           }}
         ></div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
           {/* Single Bubble Styling */}
           <style jsx>{`
             .bubble {
-              background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+              background: radial-gradient(circle at top left, rgba(230, 230, 250, 0.8), rgba(230, 230, 250, 0.2)); // Lavender bubbles
               border-radius: 50%;
               box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
               opacity: 0.6;
@@ -59,22 +59,22 @@ const Hero = () => {
                 className="mb-5 font-bold leading-tight transition-transform duration-300 ease-in-out hover:-translate-y-2 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
                 style={{ 
                   fontFamily: 'Playfair Display, serif',
-                  color: '#f5f5dc',
+                  color: '#e6e6fa', // Lavender color for title text
                 }}
               >
                 CHAMELEON BEAUTY
               </h1>
               <p
-                className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:text-[#6f4f28] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+                className="mb-12 !leading-relaxed transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:text-[#4b0082] text-xl md:text-2xl lg:text-3xl xl:text-4xl"
                 style={{ 
                   fontFamily: 'Lora, serif',
-                  color: '#8b4513',
+                  color: '#800080', // Dark purple for subheading
                 }}
               >
                 Unleash Your Inner Glamour
               </p>
               <div>
-                <Link href="#about" className="inline-block px-6 py-3 border border-[#f5f5dc] text-[#f5f5dc] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#f5f5dc] hover:text-[#6f4f28]">
+                <Link href="#about" className="inline-block px-6 py-3 border border-[#e6e6fa] text-[#e6e6fa] font-lora text-lg rounded-full transition-colors duration-300 ease-in-out hover:bg-[#e6e6fa] hover:text-[#4b0082]">
                   Learn More
                 </Link>
               </div>

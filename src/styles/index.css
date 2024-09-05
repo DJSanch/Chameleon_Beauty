@@ -87,7 +87,7 @@
   
 
   .text-custom-brown {
-    color: #6f4f28;
+    color: #800080;
   }
 
   .sticky .header-logo {
@@ -108,7 +108,7 @@
 
   /* Button styles */
   .button-text-base {
-    color: #6f4f28; /* Brownish color */
+    color: #800080; /* Brownish color */
     transition: color 0.3s ease-in-out; /* Smooth color transition */
     font-family: 'Lora', serif;
   }
@@ -237,4 +237,14 @@
     animation: fadeUp 0.6s ease-out;
   }
   
+  /* Add this to your CSS file or Tailwind configuration */
+.nav-menu-container {
+  margin-left: 2rem; /* Adjust the value to your preference */
+}
+
+/* If using TailwindCSS */
+.lg\:ml-2rem {
+  margin-left: 2rem; /* Adjust the value to your preference */
+}
+
 }
