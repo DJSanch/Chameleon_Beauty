@@ -6,7 +6,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="Brush Strokes & Beauty Notes"
-          paragraph="Your Beauty Insider - September 2024: Fall Beauty Awakening. As the leaves begin their vibrant transformation, it's time for our beauty routines to follow suit. This month, we're embracing the warm hues and rich textures that autumn brings."
+          paragraph="Your Beauty Insider - September 2024: Fall Beauty Awakening. As the leaves begin their vibrant transformation, it&apos;s time for our beauty routines to follow suit. This month, we&apos;re embracing the warm hues and rich textures that autumn brings."
           center
         />
         <div className="mt-10">
@@ -15,7 +15,7 @@ const Testimonials = () => {
         </div>
         <div className="mt-8">
           <h2 className="text-lg font-semibold text-purple-800">Skincare Spotlight: Hydration Heroes</h2>
-          <p className="mt-2 text-purple-700">Combat the onset of cooler weather with our curated selection of deeply nourishing moisturizers. I’ll guide you through choosing the perfect formula for your skin type.</p>
+          <p className="mt-2 text-purple-700">Combat the onset of cooler weather with our curated selection of deeply nourishing moisturizers. I&apos;ll guide you through choosing the perfect formula for your skin type.</p>
         </div>
         <div className="mt-8">
           <h2 className="text-lg font-semibold text-purple-800">Wellness Corner: Mindful Makeup Routines</h2>
