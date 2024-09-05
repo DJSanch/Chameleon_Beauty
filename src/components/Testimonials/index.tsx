@@ -23,7 +23,7 @@ const Testimonials = () => {
         </div>
         <div className="mt-8">
           <h2 className="text-lg font-semibold text-purple-800">Artistry Masterclass: The Perfect Autumn Lip</h2>
-          <p className="mt-2 text-purple-700">Join me for an exclusive online session where we'll demonstrate how to achieve the perfect ombré lip using this season's most coveted shades. Stay tuned!</p>
+          <p className="mt-2 text-purple-700">Join me for an exclusive online session where we&apos;ll demonstrate how to achieve the perfect ombré lip using this season&apos;s most coveted shades. Stay tuned!</p>
         </div>
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
