@@ -75,8 +75,8 @@ const Header = () => {
                         href={menuItem.path}
                         onClick={handleMenuItemClick}
                         className={`flex py-1 text-sm lg:mr-12 lg:inline-flex lg:px-20 lg:py-2 font-lora button-text-base ${
-                          usePathName === menuItem.path ? "text-beige" : "text-beige"
-                        } hover:text-dark-purple`}
+                          usePathName === menuItem.path ? "text-purple" : "text-purple"
+                        }`}
                       >
                         {menuItem.title}
                       </Link>
@@ -84,7 +84,7 @@ const Header = () => {
                       <>
                         <p
                           onClick={() => handleSubmenu(index)}
-                          className="flex cursor-pointer items-center justify-between py-1 text-sm text-beige group-hover:text-dark-purple lg:mr-0 lg:inline-flex lg:px-0 lg:py-2 font-chameleon button-text-base"
+                          className="flex cursor-pointer items-center justify-between py-1 text-sm text-white group-hover:text-purple-300 lg:mr-0 lg:inline-flex lg:px-0 lg:py-2 font-chameleon button-text-base"
                         >
                           {menuItem.title}
                           <span className="pl-2">
@@ -99,7 +99,7 @@ const Header = () => {
                           </span>
                         </p>
                         <div
-                          className={`submenu absolute left-0 top-full rounded-sm bg-beige transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[200px] lg:p-3 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                          className={`submenu absolute left-0 top-full rounded-sm bg-purple-50 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[200px] lg:p-3 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                             openIndex === index ? "block" : "hidden"
                           }`}
                         >
@@ -108,7 +108,7 @@ const Header = () => {
                               href={submenuItem.path}
                               onClick={handleMenuItemClick}
                               key={index}
-                              className="block rounded py-2 text-xs text-beige hover:text-dark-purple lg:px-2 font-chameleon button-text-base"
+                              className="block rounded py-2 text-xs text-white hover:text-gray-300 lg:px-2 font-chameleon button-text-base"
                             >
                               {submenuItem.title}
                             </Link>
@@ -132,17 +132,17 @@ const Header = () => {
               className="px-8 py-1"
             >
               <span
-                className={`block h-0.5 w-5 bg-beige transition-all duration-300 ${
+                className={`block h-0.5 w-5 bg-black transition-all duration-300 ${
                   navbarOpen ? "rotate-45 translate-y-1.5" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 bg-beige transition-all duration-300 ${
+                className={`block h-0.5 w-5 bg-black transition-all duration-300 ${
                   navbarOpen ? "opacity-0" : "my-1"
                 }`}
               />
               <span
-                className={`block h-0.5 w-5 bg-beige transition-all duration-300 ${
+                className={`block h-0.5 w-5 bg-black transition-all duration-300 ${
                   navbarOpen ? "-rotate-45 -translate-y-1.5" : ""
                 }`}
               />
@@ -151,7 +151,7 @@ const Header = () => {
             {/* Mobile Navigation Menu */}
             <nav
               id="navbarCollapse"
-              className={`navbar absolute right-5 top-full z-30 w-[200px] rounded border-[.5px] border-beige bg-gray-800 px-3 py-2 duration-300 ${
+              className={`navbar absolute right-5 top-full z-30 w-[200px] rounded border-[.5px] border-white bg-gray-800 px-3 py-2 duration-300 ${
                 navbarOpen
                   ? "opacity-100 visible"
                   : "invisible top-[120%] opacity-0"
@@ -165,8 +165,8 @@ const Header = () => {
                         href={menuItem.path}
                         onClick={handleMenuItemClick}
                         className={`flex py-1 text-sm font-lora button-text-base ${
-                          usePathName === menuItem.path ? "text-beige" : "text-beige"
-                        } hover:text-dark-purple`}
+                          usePathName === menuItem.path ? "text-white" : "text-white"
+                        }`}
                       >
                         {menuItem.title}
                       </Link>
@@ -174,7 +174,7 @@ const Header = () => {
                       <>
                         <p
                           onClick={() => handleSubmenu(index)}
-                          className="flex cursor-pointer items-center justify-between py-1 text-sm text-beige group-hover:text-dark-purple font-chameleon button-text-base"
+                          className="flex cursor-pointer items-center justify-between py-1 text-sm text-white group-hover:text-gray-300 font-chameleon button-text-base"
                         >
                           {menuItem.title}
                           <span className="pl-2">
@@ -198,7 +198,7 @@ const Header = () => {
                               href={submenuItem.path}
                               onClick={handleMenuItemClick}
                               key={index}
-                              className="block rounded py-2 text-xs text-beige hover:text-dark-purple font-chameleon button-text-base"
+                              className="block rounded py-2 text-xs text-white hover:text-gray-300 font-chameleon button-text-base"
                             >
                               {submenuItem.title}
                             </Link>
